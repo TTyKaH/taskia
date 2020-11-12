@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/bg.png");
+    background-size: cover;
+    background-position: center -180px;
+}
+
+.wrap {
+    margin: 0 130px 0 180px;
+}
+
+
+/* первая секция */
+.taskia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.taskia > a {
+    font-size: 30px;
+    font-weight: 400;
+    color: #525FFB;
+    text-decoration: none;
+    margin: 32px 0 0 20px;
+}
+
+.taskia button {
+    border: 2px solid #525FFB;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    margin-top: 32px;
+    background-color: transparent;
+}
+
+.taskia button a {
+    letter-spacing: 1px;
+    color: #525FFB;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+
+.taskManagment {
+    display: flex;
+    margin-top: 40px;
+}
+
+.managment {
+    margin: 120px 44px 0 0;
+}
+
+.managment h1 {
+    font-size: 50px;
+    max-width: 500px;
+    font-weight: 900;
+    color: #1E1C24;
+    line-height: 70px;
+}
+
+.managment p {
+    margin: 20px 0 40px 0;
+    max-width: 600px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #B1AAAA;
+    line-height: 25px;
+    width: 80%;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.input input {
+    border-radius: 38px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #EBEBEB;
+    width: 60%;
+    color: #1E1C24;
+    opacity: .36;
+    padding-left: 20px;
+}
+
+.input button {
+    width: 180px;
+    border-radius: 38px;
+    border: none;
+    background-color: #525FFB;
+}
+
+.input button a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+
+.people {
+    width: 100%;
+    max-width: 600px;
+    height: 530px;
+}
+
+/* Вторая секция */
+.services {
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+}
+
+.services h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 auto 80px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+
+.card {
+    color: #1E1C24;
+    width: 30%;
+    max-width: 280px;
+    height: 430px;
+    background-color: #E9F0FF;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+}
+
+.card:first-child {
+    background-color: #525FFB;
+    color: #fff;
+    margin: 0;
+}
+
+.card:last-child {
+    margin-top: 40px;
+    background-color: #FFE7AA;
+}
+
+.card img {
+    max-height: 180px;
+    margin-top: 40px;
+    position: absolute;
+    left: 35px;
+}
+
+.card:last-child img {
+    left: 20px;
+}
+
+.card h3 {
+    margin: 220px 50px 30px;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.card p {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0 20px 20px;
+}
+
+/* Третья секция */
+.needQuestion {
+    display: flex;
+    margin-top: 200px;
+}
+
+.needQuestion img {
+    max-width: 600px;
+}
+
+.questionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 150px 0 30px;
+}
+
+.questionText h2 {
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 300px;
+}
+
+.questionText p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #B1AAAA;
+}
+
+.questionText button {
+    width: 180px;
+    height: 55px;
+    border-radius: 38px;
+    border: none;
+    background-color: #525FFB;
+}
+
+.questionText button a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Четвертая секция */
+.taskmanager {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 200px;
+}
+
+.taskmanagerText {
+    width: 500px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskmanagerText h2 {
+    margin: 40px 0 20px 0;
+    font-size: 32px;
+    max-width: 380px;
+}
+
+.taskmanagerText p {
+    font-size: 15px;
+    color: #B1AAAA;
+    font-weight: 600;
+}
+
+.linkToApp {
+    margin-top: 50px;
+    display: flex;
+    justify-content: start;
+}
+
+.linkToApp img {
+    max-width: 40px;
+}
+
+.linkToApp:last-child img {
+    margin-left: 40px;
+    max-width: 100px;
+}
+
+.taskmanager > img {
+    max-width: 650px;
+}
+
+
+
