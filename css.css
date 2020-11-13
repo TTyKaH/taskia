@@ -9,6 +9,7 @@
 body {
     background-image: url("img/bg.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center -180px;
 }
 
@@ -133,7 +134,7 @@ body {
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 140px;
 }
 
@@ -179,7 +180,7 @@ body {
 
 .card p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 20px 20px;
 }
 
@@ -197,7 +198,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 150px 0 30px;
+    margin: 0 120px 0 50px;
 }
 
 .questionText h2 {
@@ -207,7 +208,7 @@ body {
 }
 
 .questionText p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     color: #B1AAAA;
 }
@@ -233,7 +234,7 @@ body {
 .taskmanager {
     display: flex;
     justify-content: flex-end;
-    margin-top: 200px;
+    margin: 200px 0 100px 0;
 }
 
 .taskmanagerText {
@@ -271,8 +272,92 @@ body {
 }
 
 .taskmanager > img {
-    max-width: 650px;
+    max-width: 650px
 }
 
+/* пятая секция */
+.trustUs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
+.trustUs h2 {
+    font-size: 32px;
+    margin: auto;
+    margin-bottom: 130px;
+
+}
+
+.trustUs span {
+    font-size: 90px;
+    color: #525FFB;
+    margin: auto;
+}
+
+.gridImage {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
+    grid-template-rows: 1fr 0.9fr 1fr 0.9fr 1fr;
+}
+
+.img1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    max-width: 90px;
+}
+
+.img2 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    max-width: 50px;
+}
+
+.img3 {
+    grid-column: 5 / span 1;
+    grid-row: 5 / span 1;
+    max-width: 90px;
+}
+
+.img4 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    max-width: 60px;
+}
+
+.img5 {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+    max-width: 80px;
+}
+
+.img6 {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    max-width: 40px;
+}
+
+/* шестая секция */
+.end {
+    display: flex;
+    flex-direction: column;
+    margin: 300px auto 200px;
+    max-width: 600px;
+}
+
+.end h2 {
+    font-size: 32px;
+    margin: auto;
+}
+
+.end span {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px auto 40px;
+    text-align: center;
+    max-width: 480px;
+}
 
