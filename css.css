@@ -1,363 +1,374 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("img/bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center -180px;
+  background: url("img/bg.png") center no-repeat;
+  background-size: cover;
 }
 
-.wrap {
-    margin: 0 130px 0 180px;
+button,
+button:active {
+  cursor: pointer;
+  outline: none;
 }
-
 
 /* первая секция */
 .taskia {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .taskia > a {
-    font-size: 30px;
-    font-weight: 400;
-    color: #525FFB;
-    text-decoration: none;
-    margin: 32px 0 0 20px;
+  font-size: 47px;
+  font-weight: 700;
+  color: #525ffb;
+  text-decoration: none;
+  margin: 48px 0 0 20px;
 }
 
 .taskia button {
-    border: 2px solid #525FFB;
-    border-radius: 20px;
-    height: 40px;
-    width: 100px;
-    margin-top: 32px;
-    background-color: transparent;
+  border: 2px solid #525ffb;
+  border-radius: 29px;
+  height: 58px;
+  width: 147px;
+  margin-top: 56px;
+  background-color: transparent;
+  letter-spacing: 1px;
+  color: #525ffb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
 }
 
-.taskia button a {
-    letter-spacing: 1px;
-    color: #525FFB;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: 'Mulish', sans-serif;
+.taskia button:hover {
+  color: #3944c0;
+  border-color: #3944c0;
+  transition: 0.3s linear;
 }
 
-.taskManagment {
-    display: flex;
-    margin-top: 40px;
+.task-managment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 63px;
 }
 
 .managment {
-    margin: 120px 44px 0 0;
+  margin: 174px 44px 0 0;
+  max-width: 700px;
 }
 
 .managment h1 {
-    font-size: 50px;
-    max-width: 500px;
-    font-weight: 900;
-    color: #1E1C24;
-    line-height: 70px;
+  font-size: 70px;
+  max-width: 700px;
+  font-weight: 900;
+  color: #1e1c24;
+  line-height: 85px;
+  letter-spacing: -2px;
 }
 
 .managment p {
-    margin: 20px 0 40px 0;
-    max-width: 600px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #B1AAAA;
-    line-height: 25px;
-    width: 80%;
+  margin: 30px 0 60px 0;
+  max-width: 616px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #b1aaaa;
+  line-height: 35px;
+  width: 80%;
 }
 
-.input {
-    display: flex;
-    justify-content: space-between;
-    height: 55px;
-    margin-right: 20px;
+.email-field {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  margin-right: 20px;
 }
 
-.input input {
-    border-radius: 38px;
-    font-size: 18px;
-    outline: none;
-    border: 2px solid #EBEBEB;
-    width: 60%;
-    color: #1E1C24;
-    opacity: .36;
-    padding-left: 20px;
+.email-field input {
+  border-radius: 38px;
+  font-size: 18px;
+  outline: none;
+  border: 3px solid #ebebeb;
+  width: 60%;
+  color: #1e1c24;
+  opacity: 0.36;
+  padding-left: 20px;
+  margin-right: 40px;
 }
 
-.input button {
-    width: 180px;
-    border-radius: 38px;
-    border: none;
-    background-color: #525FFB;
-}
-
-.input button a {
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Mulish', sans-serif;
+.email-field button {
+  width: 180px;
+  border-radius: 38px;
 }
 
 .people {
-    width: 100%;
-    max-width: 600px;
-    height: 530px;
+  max-width: 697px;
+  max-height: 626px;
 }
 
 /* Вторая секция */
 .services {
-    display: flex;
-    flex-direction: column;
-    padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
 }
 
 .services h2 {
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0 auto 80px;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0 auto 80px;
 }
 
 .cards {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 140px;
+  max-width: 1468px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
 }
 
 .card {
-    color: #1E1C24;
-    width: 30%;
-    max-width: 280px;
-    height: 430px;
-    background-color: #E9F0FF;
-    border-radius: 15px;
-    text-align: center;
-    position: relative;
-    margin-top: 80px;
+  color: #1e1c24;
+  width: 30%;
+  min-width: 290px;
+  height: 476px;
+  background-color: #e9f0ff;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 80px;
 }
 
 .card:first-child {
-    background-color: #525FFB;
-    color: #fff;
-    margin: 0;
+  background-color: #525ffb;
+  color: #fff;
+  margin: 0 20px 0 0;
 }
 
 .card:last-child {
-    margin-top: 40px;
-    background-color: #FFE7AA;
+  margin-top: 40px;
+  background-color: #ffe7aa;
+  margin-left: 20px;
 }
 
 .card img {
-    max-height: 180px;
-    margin-top: 40px;
-    position: absolute;
-    left: 35px;
+  margin-top: 50px;
 }
 
 .card:last-child img {
-    left: 20px;
+  left: 20px;
 }
 
 .card h3 {
-    margin: 220px 50px 30px;
-    font-weight: 300;
-    font-size: 24px;
+  width: 200px;
+  font-weight: 300;
+  font-size: 30px;
+  margin: 40px auto 34px auto;
 }
 
 .card p {
-    font-weight: 300;
-    font-size: 13px;
-    margin: 0 20px 20px;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 20px 20px;
 }
 
 /* Третья секция */
-.needQuestion {
-    display: flex;
-    margin-top: 200px;
+.need-question {
+  display: flex;
+  margin-top: 335px;
 }
 
-.needQuestion img {
-    max-width: 600px;
+.need-question img {
+  max-width: 600px;
+  max-height: 375px;
 }
 
-.questionText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 120px 0 50px;
+.question-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 120px 0 50px;
 }
 
-.questionText h2 {
-    font-size: 32px;
-    font-weight: 600;
-    max-width: 300px;
+.question-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  max-width: 400px;
 }
 
-.questionText p {
-    font-size: 13px;
-    font-weight: 600;
-    color: #B1AAAA;
+.question-text p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b1aaaa;
 }
 
-.questionText button {
-    width: 180px;
-    height: 55px;
-    border-radius: 38px;
-    border: none;
-    background-color: #525FFB;
-}
-
-.questionText button a {
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Mulish', sans-serif;
+.question-text button {
+  width: 180px;
+  height: 55px;
+  border-radius: 38px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
 }
 
 /* Четвертая секция */
 .taskmanager {
-    display: flex;
-    justify-content: flex-end;
-    margin: 200px 0 100px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 200px 0 280px 0;
 }
 
-.taskmanagerText {
-    width: 500px;
-    margin-right: 80px;
-    display: flex;
-    flex-direction: column;
+.taskmanager-text {
+  width: 500px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
-.taskmanagerText h2 {
-    margin: 40px 0 20px 0;
-    font-size: 32px;
-    max-width: 380px;
+.taskmanager-text h2 {
+  margin: 40px 0 20px 0;
+  font-size: 50px;
 }
 
-.taskmanagerText p {
-    font-size: 15px;
-    color: #B1AAAA;
-    font-weight: 600;
+.taskmanager-text p {
+  font-size: 18px;
+  color: #b1aaaa;
+  font-weight: 600;
 }
 
-.linkToApp {
-    margin-top: 50px;
-    display: flex;
-    justify-content: start;
+.link-app {
+  width: 170px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.linkToApp img {
-    max-width: 40px;
+.link-app img {
+  max-width: 40px;
 }
 
-.linkToApp:last-child img {
-    margin-left: 40px;
-    max-width: 100px;
+.link-app:last-child img {
+  max-width: 100px;
 }
 
 .taskmanager > img {
-    max-width: 650px
+  max-width: 650px;
 }
 
 /* пятая секция */
-.trustUs {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.trust-us {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.trustUs h2 {
-    font-size: 32px;
-    margin: auto;
-    margin-bottom: 130px;
-
+.trust-us h2 {
+  font-size: 50px;
+  margin: auto;
+  margin-bottom: 130px;
 }
 
-.trustUs span {
-    font-size: 90px;
-    color: #525FFB;
-    margin: auto;
+.trust-us span {
+  font-size: 150px;
+  color: #525ffb;
+  margin: auto;
 }
 
-.gridImage {
-    position: absolute;
-    left: 0;
-    top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
-    grid-template-rows: 1fr 0.9fr 1fr 0.9fr 1fr;
+.grid-image {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
+  grid-template-rows: 1fr 0.9fr 1fr 0.9fr 1fr;
 }
 
 .img1 {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    max-width: 90px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  max-width: 90px;
 }
 
 .img2 {
-    grid-column: 1 / span 1;
-    grid-row: 5 / span 1;
-    max-width: 50px;
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+  max-width: 50px;
 }
 
 .img3 {
-    grid-column: 5 / span 1;
-    grid-row: 5 / span 1;
-    max-width: 90px;
+  grid-column: 5 / span 1;
+  grid-row: 5 / span 1;
+  max-width: 90px;
 }
 
 .img4 {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
-    max-width: 60px;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  max-width: 60px;
 }
 
 .img5 {
-    grid-column: 5 / span 1;
-    grid-row: 1 / span 1;
-    max-width: 80px;
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  max-width: 80px;
 }
 
 .img6 {
-    grid-column: 4 / span 1;
-    grid-row: 3 / span 1;
-    max-width: 40px;
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+  max-width: 40px;
 }
 
 /* шестая секция */
 .end {
-    display: flex;
-    flex-direction: column;
-    margin: 300px auto 200px;
-    max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 300px auto 200px;
+  max-width: 600px;
 }
 
 .end h2 {
-    font-size: 32px;
-    margin: auto;
+  font-size: 50px;
+  margin: auto;
 }
 
 .end span {
-    font-size: 20px;
-    font-weight: 300;
-    margin: 20px auto 40px;
-    text-align: center;
-    max-width: 480px;
+  font-size: 27px;
+  font-weight: 300;
+  margin: 20px auto 80px;
+  text-align: center;
+  max-width: 780px;
 }
 
+/* helpers */
+.wrap {
+  margin: 0 30px 0 130px;
+}
+
+.wrap-second {
+  margin-right: 100px;
+}
+
+.button-help {
+  background-color: #525ffb;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+}
+
+.button-help:hover {
+  background-color: #3944c0;
+  transition: 0.3s linear;
+}
