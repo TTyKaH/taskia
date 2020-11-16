@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("img/bg.png") center no-repeat;
+  background: url("../img/bg.png") center no-repeat;
   background-size: cover;
 }
 
@@ -108,16 +108,11 @@ button:active {
   border-radius: 38px;
 }
 
-.people {
-  max-width: 697px;
-  max-height: 626px;
-}
-
 /* Вторая секция */
 .services {
   display: flex;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: 283px;
 }
 
 .services h2 {
@@ -131,6 +126,7 @@ button:active {
   display: flex;
   justify-content: space-between;
   padding: 0 140px;
+  margin: auto;
 }
 
 .card {
@@ -169,42 +165,43 @@ button:active {
   font-weight: 300;
   font-size: 30px;
   margin: 40px auto 34px auto;
+  line-height: 40px;
 }
 
 .card p {
   font-weight: 300;
   font-size: 16px;
   margin: 0 20px 20px;
+  line-height: 30px;
 }
 
 /* Третья секция */
 .need-question {
   display: flex;
+  justify-content: start;
   margin-top: 335px;
 }
 
-.need-question img {
-  max-width: 600px;
-  max-height: 375px;
-}
-
 .question-text {
+  max-width: 552px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 120px 0 50px;
+  margin-left: 68px;
 }
 
 .question-text h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 600;
-  max-width: 400px;
+  line-height: 60px;
+  max-width: 500px;
 }
 
 .question-text p {
   font-size: 18px;
   font-weight: 600;
   color: #b1aaaa;
+  line-height: 30px;
 }
 
 .question-text button {
@@ -223,12 +220,12 @@ button:active {
 .taskmanager {
   display: flex;
   justify-content: flex-end;
-  margin: 200px 0 280px 0;
+  margin: 427px 0 280px 0;
 }
 
 .taskmanager-text {
-  width: 500px;
-  margin-right: 80px;
+  width: 552px;
+  margin-right: 103px;
   display: flex;
   flex-direction: column;
 }
@@ -242,6 +239,7 @@ button:active {
   font-size: 18px;
   color: #b1aaaa;
   font-weight: 600;
+  line-height: 30px;
 }
 
 .link-app {
@@ -257,10 +255,6 @@ button:active {
 
 .link-app:last-child img {
   max-width: 100px;
-}
-
-.taskmanager > img {
-  max-width: 650px;
 }
 
 /* пятая секция */
@@ -284,8 +278,9 @@ button:active {
 
 .grid-image {
   position: absolute;
-  left: 0;
+  left: 180px;
   top: 40px;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
   grid-template-rows: 1fr 0.9fr 1fr 0.9fr 1fr;
@@ -350,7 +345,7 @@ button:active {
 
 /* helpers */
 .wrap {
-  margin: 0 30px 0 130px;
+  margin: 0 130px 0 180px;
 }
 
 .wrap-second {
