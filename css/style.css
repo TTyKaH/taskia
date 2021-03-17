@@ -7,8 +7,7 @@
 }
 
 body {
-  background: url("../img/bg.png") center no-repeat;
-  background-size: cover;
+  background: url("../img/bg.png") no-repeat center/cover;
 }
 
 button,
@@ -38,20 +37,15 @@ button:active {
   height: 58px;
   width: 147px;
   margin-top: 56px;
-  background-color: transparent;
+  background: transparent;
   letter-spacing: 1px;
   color: #525ffb;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Mulish", sans-serif;
+  transition: color 0.3s linear, backgroung 0.3s linear;
 }
 
 .taskia button:hover {
-  color: #3944c0;
-  border-color: #3944c0;
-  transition: 0.3s linear;
+  color: #fff;
+  background: #525ffb;
 }
 
 .task-managment {
@@ -98,7 +92,6 @@ button:active {
   border: 3px solid #ebebeb;
   width: 60%;
   color: #1e1c24;
-  opacity: 0.36;
   padding-left: 20px;
   margin-right: 40px;
 }
@@ -112,7 +105,7 @@ button:active {
 .services {
   display: flex;
   flex-direction: column;
-  margin-top: 283px;
+  padding-top: 283px;
 }
 
 .services h2 {
@@ -179,7 +172,7 @@ button:active {
 .need-question {
   display: flex;
   justify-content: start;
-  margin-top: 335px;
+  padding-top: 335px;
 }
 
 .question-text {
@@ -220,7 +213,7 @@ button:active {
 .taskmanager {
   display: flex;
   justify-content: flex-end;
-  margin: 427px 0 280px 0;
+  padding: 427px 0 280px 0;
 }
 
 .taskmanager-text {
@@ -259,9 +252,11 @@ button:active {
 
 /* пятая секция */
 .trust-us {
+  background: url('../img/portrets-bg.png') no-repeat center 250px;
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 850px;
 }
 
 .trust-us h2 {
@@ -270,63 +265,26 @@ button:active {
   margin-bottom: 130px;
 }
 
-.trust-us span {
+.trust-us > div {
   font-size: 150px;
   color: #525ffb;
   margin: auto;
 }
 
-.grid-image {
+.image {
   position: absolute;
-  left: 180px;
-  top: 40px;
+  left: 80px;
+  top: 0;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
-  grid-template-rows: 1fr 0.9fr 1fr 0.9fr 1fr;
-}
-
-.img1 {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  max-width: 90px;
-}
-
-.img2 {
-  grid-column: 1 / span 1;
-  grid-row: 5 / span 1;
-  max-width: 50px;
-}
-
-.img3 {
-  grid-column: 5 / span 1;
-  grid-row: 5 / span 1;
-  max-width: 90px;
-}
-
-.img4 {
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
-  max-width: 60px;
-}
-
-.img5 {
-  grid-column: 5 / span 1;
-  grid-row: 1 / span 1;
-  max-width: 80px;
-}
-
-.img6 {
-  grid-column: 4 / span 1;
-  grid-row: 3 / span 1;
-  max-width: 40px;
 }
 
 /* шестая секция */
 .end {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 300px auto 200px;
+  padding: 150px 0 200px;
   max-width: 600px;
 }
 
@@ -335,7 +293,7 @@ button:active {
   margin: auto;
 }
 
-.end span {
+.end > div {
   font-size: 27px;
   font-weight: 300;
   margin: 20px auto 80px;
@@ -352,10 +310,7 @@ button:active {
   margin-right: 100px;
 }
 
-.button-help {
-  background-color: #525ffb;
-  border: none;
-  color: #fff;
+.button-help-text {
   text-align: center;
   text-decoration: none;
   font-size: 18px;
@@ -363,7 +318,13 @@ button:active {
   font-family: "Mulish", sans-serif;
 }
 
+.button-help {
+  background: #525ffb;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s linear;
+}
+
 .button-help:hover {
   background-color: #3944c0;
-  transition: 0.3s linear;
 }
